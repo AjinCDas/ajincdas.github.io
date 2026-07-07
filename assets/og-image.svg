@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#34d399"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0.9" cy="0.05" r="0.7">
+      <stop offset="0" stop-color="#2dd4bf" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.05" cy="0.95" r="0.7">
+      <stop offset="0" stop-color="#34d399" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#34d399" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#0a1310"/>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+
+  <!-- subtle grid -->
+  <g stroke="#94e9c5" stroke-opacity="0.06">
+    <path d="M0 105h1200M0 210h1200M0 315h1200M0 420h1200M0 525h1200"/>
+    <path d="M150 0v630M300 0v630M450 0v630M600 0v630M750 0v630M900 0v630M1050 0v630"/>
+  </g>
+
+  <!-- brand mark -->
+  <g transform="translate(92,92)">
+    <rect width="88" height="88" rx="20" fill="#11201a" stroke="url(#grad)" stroke-width="3"/>
+    <path d="M44 16 L68 68 L57.5 68 L44 37 L30.5 68 L20 68 Z" fill="url(#grad)"/>
+    <rect x="36" y="52" width="16" height="7" rx="3.5" fill="url(#grad)"/>
+  </g>
+
+  <!-- text -->
+  <text x="92" y="290" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="82" font-weight="800" fill="#e7f2ec" letter-spacing="-1">Ajin C Das</text>
+  <text x="92" y="368" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="44" font-weight="600" fill="url(#grad)">Senior Full Stack Drupal Developer</text>
+  <text x="92" y="432" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="27" fill="#96b3a6">10+ years · Enterprise Drupal platforms · Azure DevOps · Qatar</text>
+
+  <!-- tech chips -->
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="24" font-weight="600">
+    <rect x="92" y="486" width="160" height="52" rx="26" fill="#16281f" stroke="#34d399" stroke-opacity="0.4"/>
+    <text x="172" y="519" text-anchor="middle" fill="#34d399">Drupal 11</text>
+    <rect x="268" y="486" width="110" height="52" rx="26" fill="#16281f" stroke="#34d399" stroke-opacity="0.4"/>
+    <text x="323" y="519" text-anchor="middle" fill="#34d399">PHP</text>
+    <rect x="394" y="486" width="130" height="52" rx="26" fill="#16281f" stroke="#34d399" stroke-opacity="0.4"/>
+    <text x="459" y="519" text-anchor="middle" fill="#34d399">Azure</text>
+    <rect x="540" y="486" width="140" height="52" rx="26" fill="#16281f" stroke="#34d399" stroke-opacity="0.4"/>
+    <text x="610" y="519" text-anchor="middle" fill="#34d399">Docker</text>
+    <rect x="696" y="486" width="190" height="52" rx="26" fill="#16281f" stroke="#34d399" stroke-opacity="0.4"/>
+    <text x="791" y="519" text-anchor="middle" fill="#34d399">JavaScript</text>
+  </g>
+
+  <!-- url -->
+  <text x="1108" y="580" text-anchor="end" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="24" fill="#96b3a6">ajincdas.github.io</text>
+</svg>

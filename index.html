@@ -1,196 +1,277 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ajin C Das | Web + DevOps Developer</title>
-  <style>
-    :root {
-      --sky: #4fb3e8;
-    --sky-light: #e8f6fd;
-          --sky-dark: #1a7fb8;
-    --white: #ffffff;
-      }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-        font-family: 'Segoe UI', Arial, sans-serif;
-    background: var(--white);
-    color: #223;
-    line-height: 1.6;
-}
-  header {
-        background: linear-gradient(135deg, var(--sky-dark), var(--sky));
-    color: var(--white);
-    padding: 60px 20px;
-    text-align: center;
-}
-  header h1 { font-size: 2.4em; margin-bottom: 8px; }
-  header p.designation { font-size: 1.2em; font-weight: 300; }
-  nav {
-        background: var(--sky-dark);
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 12px 0;
-    flex-wrap: wrap;
-}
-  nav a {
-        color: var(--white);
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-  }
-  nav a:hover { text-decoration: underline; }
-  section {
-        max-width: 900px;
-    margin: 0 auto;
-    padding: 50px 20px;
-}
-  section h2 {
-        color: var(--sky-dark);
-    border-bottom: 3px solid var(--sky);
-    padding-bottom: 8px;
-    margin-bottom: 20px;
-  }
-  .bio-box {
-        background: var(--sky-light);
-    padding: 20px;
-    border-radius: 10px;
-}
-  .skills-grid {
-        display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-    }
-  .skill-card {
-        background: var(--sky-light);
-    border-left: 5px solid var(--sky-dark);
-    padding: 15px 20px;
-    border-radius: 8px;
-}
-  .skill-card h3 { color: var(--sky-dark); margin-bottom: 6px; }
-  .timeline-item {
-        background: var(--sky-light);
-    padding: 15px 20px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    border-left: 5px solid var(--sky);
-}
-  .timeline-item h3 { color: var(--sky-dark); }
-  .timeline-item span { font-size: 0.9em; color: #555; }
-  footer {
-        background: var(--sky-dark);
-    color: var(--white);
-    text-align: center;
-    padding: 30px 20px;
-}
-  footer a {
-        color: var(--white);
-    font-weight: 600;
-    text-decoration: underline;
-  }
-  .contact-list { list-style: none; margin-top: 10px; }
-  .contact-list li { margin: 6px 0; }
-</style>
-  </head>
-  <body>
+  <title>Ajin C Das — Senior Full Stack Drupal Developer</title>
+  <meta name="description" content="Ajin C Das — Senior Full Stack Drupal Developer & DevOps engineer with 10+ years of experience building enterprise Drupal platforms, Azure CI/CD pipelines and scalable web solutions.">
+  <meta name="author" content="Ajin C Das">
+  <link rel="canonical" href="https://ajincdas.github.io/">
 
-  <header>
-    <h1>Ajin C Das</h1>
-  <p class="designation">Web + DevOps Developer</p>
-</header>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ajincdas.github.io/">
+  <meta property="og:title" content="Ajin C Das — Senior Full Stack Drupal Developer">
+  <meta property="og:description" content="10+ years building enterprise Drupal platforms, custom themes & modules, and Azure DevOps pipelines for government and enterprise clients.">
+  <meta property="og:image" content="https://ajincdas.github.io/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ajin C Das — Senior Full Stack Drupal Developer">
+  <meta name="twitter:description" content="10+ years building enterprise Drupal platforms, custom themes & modules, and Azure DevOps pipelines.">
+  <meta name="twitter:image" content="https://ajincdas.github.io/assets/og-image.png">
 
-  <section id="about">
-    <h2>About Me</h2>
-    <div class="bio-box">
-      <p>
-        I am a Web and DevOps Developer with 10 years of overall experience in software
-      development and infrastructure management. My journey began with 3 years of
-      building applications using .NET MVC and SQL Server, followed by 7 years of
-      PHP development across Drupal, Laravel, and CodeIgniter. Over the last 4 years,
-        I have also built strong expertise in DevOps practices, working with Linux,
-      Apache, and Microsoft Azure to design CI/CD pipelines and manage cloud
-      infrastructure. I enjoy combining development and operations skills to deliver
-      reliable, scalable web solutions.
+  <!-- Icons -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#0a1310">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="nav-brand" href="#top">
+        <span class="brand-mark">A</span>
+        <span class="brand-text">Ajin&nbsp;C&nbsp;Das</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <p class="hero-eyebrow reveal">Hello, I'm</p>
+      <h1 class="hero-title reveal">Ajin C Das</h1>
+      <h2 class="hero-subtitle reveal">Senior Full Stack <span class="accent">Drupal</span> Developer</h2>
+      <p class="hero-lede reveal">
+        I build enterprise-grade Drupal platforms and the DevOps pipelines that ship them —
+        10+ years across PHP, cloud infrastructure and modern front-end engineering,
+        delivering government and enterprise websites used across Qatar.
       </p>
-  </div>
-</section>
-
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="skills-grid">
-    <div class="skill-card">
-      <h3>PHP Development</h3>
-        <p>Drupal, Laravel, CodeIgniter</p>
+      <div class="hero-cta reveal">
+        <a class="btn btn-primary" href="#work">View my work</a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
       </div>
-      <div class="skill-card">
-        <h3>DevOps</h3>
-        <p>Linux (basics, shell, bash), Apache</p>
+      <ul class="hero-stats reveal">
+        <li><strong data-count="10">0</strong><span>Years in software</span></li>
+        <li><strong data-count="7">0</strong><span>Years PHP &amp; Drupal</span></li>
+        <li><strong data-count="12">0</strong><span>Enterprise platforms</span></li>
+        <li><strong data-count="4">0</strong><span>Years DevOps &amp; Azure</span></li>
+      </ul>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <h2 class="section-title reveal"><span class="section-index">01</span> About me</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a full stack web developer with <strong>10 years of experience</strong> spanning software
+            development and infrastructure. My journey began with 3 years of .NET MVC and SQL Server,
+            followed by 7 years of PHP engineering across <strong>Drupal, Laravel and CodeIgniter</strong> —
+            with Drupal as my core specialty, from Drupal 8 through <strong>Drupal 11</strong>.
+          </p>
+          <p>
+            Day to day I design and build multisite Drupal platforms: custom themes using
+            <strong>Single Directory Components (SDC)</strong>, paragraph-driven page building for editors,
+            custom modules and field formatters, Webform integrations, AJAX-powered listings, and
+            performance-focused CSS/JS architecture.
+          </p>
+          <p>
+            For the last 4 years I've also owned the <strong>DevOps</strong> side — Linux, Apache and Nginx,
+            Docker &amp; DDEV local environments, and <strong>Azure DevOps CI/CD</strong> pipelines with Azure
+            App Service, VMs, File Storage and managed MySQL. I enjoy combining both disciplines to
+            deliver reliable, scalable web solutions end to end.
+          </p>
+        </div>
+        <aside class="about-card reveal">
+          <h3>At a glance</h3>
+          <ul>
+            <li>📍 Doha, Qatar</li>
+            <li>💼 Senior Drupal Developer</li>
+            <li>🎓 B.Sc. Computer Science · MCS</li>
+            <li>🌐 Government &amp; enterprise web platforms</li>
+            <li>⚙️ Drupal 8 → 11 · Azure · Docker</li>
+          </ul>
+        </aside>
       </div>
-      <div class="skill-card">
-        <h3>Microsoft Azure</h3>
-        <p>Azure DevOps (CI/CD), Azure Portal (App Service, VM, File Storage, MySQL Server)</p>
-    </div>
-          <div class="skill-card">
-            <h3>Version Control</h3>
-            <p>Git</p>
-          </div>
-          <div class="skill-card">
-            <h3>Agile</h3>
-            <p>Jira</p>
-          </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <h2 class="section-title reveal"><span class="section-index">02</span> Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon">🧩</div>
+          <h3>Drupal &amp; PHP</h3>
+          <p>Drupal 8–11, multisite architecture, SDC components, Paragraphs, Webform, Views, custom modules &amp; field formatters, Twig, Composer, Drush, Laravel, CodeIgniter.</p>
         </div>
-      </section>
-
-      <section id="experience">
-        <h2>Experience</h2>
-        <div class="timeline-item">
-          <h3>PHP Development</h3>
-          <span>7 years</span>
-          <p>Drupal, Laravel and CodeIgniter based web application development.</p>
-  </div>
-  <div class="timeline-item">
-          <h3>DevOps</h3>
-          <span>Last 4 years (overlapping with PHP experience)</span>
-          <p>Linux administration, Apache configuration, Azure DevOps CI/CD pipelines and Azure cloud resource management.</p>
-  </div>
-  <div class="timeline-item">
-    <h3>.NET MVC &amp; SQL Server</h3>
-          <span>3 years</span>
-          <p>Application development using .NET MVC framework and SQL Server database.</p>
-  </div>
-</section>
-
-<section id="education">
-  <h2>Education</h2>
-  <div class="timeline-item">
-    <h3>B.Sc. Computer Science</h3>
-  </div>
-        <div class="timeline-item">
-          <h3>MCS</h3>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🎨</div>
+          <h3>Front-end</h3>
+          <p>Modern JavaScript (ES6+), scalable CSS architecture, responsive design, scroll &amp; reveal animation systems, Twig theming, React fundamentals.</p>
         </div>
-      </section>
+        <div class="skill-card reveal">
+          <div class="skill-icon">☁️</div>
+          <h3>DevOps &amp; Azure</h3>
+          <p>Azure DevOps CI/CD pipelines, App Service, VMs, File Storage, Azure MySQL; Linux &amp; shell scripting, Apache, Nginx, Docker, DDEV.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🗄️</div>
+          <h3>Data &amp; Search</h3>
+          <p>MySQL, SQL Server, Apache Solr search integration, GraphQL APIs, Drupal Commerce.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🛠️</div>
+          <h3>Tooling &amp; Process</h3>
+          <p>Git, Jira &amp; Agile delivery, MkDocs documentation portals, configuration management, code review &amp; performance auditing.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🏛️</div>
+          <h3>Legacy &amp; Migration</h3>
+          <p>.NET MVC &amp; SQL Server background; content migrations, field/schema conversions and platform upgrades without content loss.</p>
+        </div>
+      </div>
+    </section>
 
-      <section id="contact">
-        <h2>Contact</h2>
-        <ul class="contact-list">
-          <li>Email: <a href="mailto:ajincd@gmail.com">ajincd@gmail.com</a></li>
-          <li>LinkedIn: <a href="#" id="linkedin-link">Add LinkedIn URL here</a></li>
-  </ul>
-</section>
+    <!-- ============ WORK ============ -->
+    <section class="section" id="work">
+      <h2 class="section-title reveal"><span class="section-index">03</span> Selected work</h2>
+      <p class="section-lede reveal">Enterprise and government platforms I've built or contributed to, plus ongoing lab experiments.</p>
+      <div class="work-grid">
+        <article class="work-card featured reveal">
+          <div class="work-tags"><span>Drupal 11</span><span>Multisite</span><span>SDC</span></div>
+          <h3>Qatar Diamond Exchange — QFZ Multisite</h3>
+          <p>
+            Building a Drupal 11 multisite platform for Qatar Free Zones. Designed the QDE site's
+            component-based theme with Single Directory Components, paragraph-driven page building
+            for editors, global Webform modals, AJAX news listings, custom field formatters, and a
+            major CSS/JS architecture overhaul that removed page-scoped duplication site-wide.
+          </p>
+        </article>
+        <article class="work-card reveal">
+          <div class="work-tags"><span>Drupal</span><span>Higher education</span></div>
+          <h3>Qatar University</h3>
+          <p>Ongoing development on the university's Drupal platform — config-driven paragraph component wrappers, section rendering improvements, admin content-management UX (exposed filters, Select2), and media handling.</p>
+        </article>
+        <article class="work-card reveal">
+          <div class="work-tags"><span>Drupal</span><span>Transport</span><span>AI</span></div>
+          <h3>Qatar Rail — passenger &amp; corporate sites</h3>
+          <p>Feature development across both Qatar Rail web platforms: AI chatbot integration with CMS-managed configuration, multilingual content moderation workflows, and live travel-status content.</p>
+        </article>
+        <article class="work-card reveal">
+          <div class="work-tags"><span>Drupal</span><span>React</span><span>Government</span></div>
+          <h3>Qatar Civil Aviation Authority</h3>
+          <p>Large-scale government ECM platform combining Drupal with embedded React applications — e-service forms, aviation workflows and content services.</p>
+        </article>
+        <article class="work-card reveal">
+          <div class="work-tags"><span>Drupal</span><span>Maritime</span></div>
+          <h3>Milaha — maritime &amp; logistics group</h3>
+          <p>Multi-brand corporate platform covering the group's business units, shipyard and vendor portal — theming, component work and front-end fixes.</p>
+        </article>
+        <article class="work-card reveal">
+          <div class="work-tags"><span>Drupal</span><span>Government</span><span>API</span></div>
+          <h3>Ministry of Transport</h3>
+          <p>Government portal development — custom news &amp; media APIs, listing views, permissions and multilingual content management.</p>
+        </article>
+        <article class="work-card reveal">
+          <div class="work-tags"><span>Drupal</span><span>Integrations</span></div>
+          <h3>ISF web platform</h3>
+          <p>Secure organisational web platform — REST API integrations with health checks, automated content synchronisation, and a redesigned site-wide search experience.</p>
+        </article>
+        <article class="work-card reveal">
+          <div class="work-tags"><span>Drupal</span><span>Webform</span><span>AR/EN</span></div>
+          <h3>QMMF — Qatar Motor &amp; Motorcycle Federation</h3>
+          <p>Event-driven federation site — webform-based registrations with custom email handlers, Arabic/English translations and responsive design integration.</p>
+        </article>
+        <article class="work-card reveal">
+          <div class="work-tags"><span>Drupal</span><span>SMS</span><span>DevOps</span></div>
+          <h3>EVMC</h3>
+          <p>Vehicle-sector platform — SMS gateway integration (Vodafone), Docker environment management and deployment configuration across dev/staging/production.</p>
+        </article>
+        <article class="work-card reveal">
+          <div class="work-tags"><span>MkDocs</span><span>UX</span></div>
+          <h3>Developer documentation portal</h3>
+          <p>Designed and built an internal documentation portal with MkDocs — custom two-panel home page, restructured information architecture, and a live Drupal/AI news feed.</p>
+        </article>
+        <article class="work-card reveal">
+          <div class="work-tags"><span>GraphQL</span><span>Solr</span><span>Commerce</span><span>React</span></div>
+          <h3>Drupal lab projects</h3>
+          <p>Ongoing experiments: headless Drupal with GraphQL, Apache Solr search, Drupal Commerce storefronts, custom modules, and Aqua Lens — a Drupal + React side project in a Dockerised Nginx stack.</p>
+        </article>
+      </div>
+    </section>
 
-<footer>
-  <p>&copy; 2026 Ajin C Das. Built with HTML &amp; CSS.</p>
-      </footer>
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <h2 class="section-title reveal"><span class="section-index">04</span> Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <span class="timeline-period">Current</span>
+          <h3>Senior Full Stack Drupal Developer · Applab, Qatar</h3>
+          <p>Leading Drupal 11 multisite development for Qatar Free Zones and other enterprise clients — theme architecture, custom modules, editor experience and delivery pipelines.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <span class="timeline-period">7 years</span>
+          <h3>PHP Development — Drupal · Laravel · CodeIgniter</h3>
+          <p>Full-lifecycle web application development: custom themes and modules, content architecture, migrations, integrations and performance optimisation.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <span class="timeline-period">4 years · overlapping</span>
+          <h3>DevOps Engineering</h3>
+          <p>Linux administration, Apache/Nginx configuration, Docker environments, Azure DevOps CI/CD pipelines and Azure cloud resource management.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <span class="timeline-period">3 years</span>
+          <h3>.NET MVC &amp; SQL Server Development</h3>
+          <p>Started my career building business applications on the Microsoft stack — .NET MVC and SQL Server.</p>
+        </div>
+      </div>
+    </section>
 
-      </body>
-      </html>
-      
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact-section" id="contact">
+      <h2 class="section-title reveal"><span class="section-index">05</span> Contact</h2>
+      <p class="section-lede reveal">Have a Drupal project, a platform to rescue, or a pipeline to build? Let's talk.</p>
+      <div class="contact-actions reveal">
+        <a class="btn btn-primary" href="mailto:ajincd@gmail.com">✉️ ajincd@gmail.com</a>
+        <a class="btn btn-ghost" href="https://github.com/ajincdas" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/ajincdas" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> Ajin C Das · Built with plain HTML, CSS &amp; JS · Hosted on GitHub Pages</p>
+    <a href="#top" class="back-to-top">↑ Back to top</a>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
