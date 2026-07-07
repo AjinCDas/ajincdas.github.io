@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajin C Das | Web + DevOps Developer</title>
+  <style>
+    :root {
+      --sky: #4fb3e8;
+    --sky-light: #e8f6fd;
+          --sky-dark: #1a7fb8;
+    --white: #ffffff;
+      }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--white);
+    color: #223;
+    line-height: 1.6;
+}
+  header {
+        background: linear-gradient(135deg, var(--sky-dark), var(--sky));
+    color: var(--white);
+    padding: 60px 20px;
+    text-align: center;
+}
+  header h1 { font-size: 2.4em; margin-bottom: 8px; }
+  header p.designation { font-size: 1.2em; font-weight: 300; }
+  nav {
+        background: var(--sky-dark);
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 12px 0;
+    flex-wrap: wrap;
+}
+  nav a {
+        color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  nav a:hover { text-decoration: underline; }
+  section {
+        max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+  section h2 {
+        color: var(--sky-dark);
+    border-bottom: 3px solid var(--sky);
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+  }
+  .bio-box {
+        background: var(--sky-light);
+    padding: 20px;
+    border-radius: 10px;
+}
+  .skills-grid {
+        display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    }
+  .skill-card {
+        background: var(--sky-light);
+    border-left: 5px solid var(--sky-dark);
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+  .skill-card h3 { color: var(--sky-dark); margin-bottom: 6px; }
+  .timeline-item {
+        background: var(--sky-light);
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-left: 5px solid var(--sky);
+}
+  .timeline-item h3 { color: var(--sky-dark); }
+  .timeline-item span { font-size: 0.9em; color: #555; }
+  footer {
+        background: var(--sky-dark);
+    color: var(--white);
+    text-align: center;
+    padding: 30px 20px;
+}
+  footer a {
+        color: var(--white);
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  .contact-list { list-style: none; margin-top: 10px; }
+  .contact-list li { margin: 6px 0; }
+</style>
+  </head>
+  <body>
+
+  <header>
+    <h1>Ajin C Das</h1>
+  <p class="designation">Web + DevOps Developer</p>
+</header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="bio-box">
+      <p>
+        I am a Web and DevOps Developer with 10 years of overall experience in software
+      development and infrastructure management. My journey began with 3 years of
+      building applications using .NET MVC and SQL Server, followed by 7 years of
+      PHP development across Drupal, Laravel, and CodeIgniter. Over the last 4 years,
+        I have also built strong expertise in DevOps practices, working with Linux,
+      Apache, and Microsoft Azure to design CI/CD pipelines and manage cloud
+      infrastructure. I enjoy combining development and operations skills to deliver
+      reliable, scalable web solutions.
+      </p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <h3>PHP Development</h3>
+        <p>Drupal, Laravel, CodeIgniter</p>
+      </div>
+      <div class="skill-card">
+        <h3>DevOps</h3>
+        <p>Linux (basics, shell, bash), Apache</p>
+      </div>
+      <div class="skill-card">
+        <h3>Microsoft Azure</h3>
+        <p>Azure DevOps (CI/CD), Azure Portal (App Service, VM, File Storage, MySQL Server)</p>
+    </div>
+          <div class="skill-card">
+            <h3>Version Control</h3>
+            <p>Git</p>
+          </div>
+          <div class="skill-card">
+            <h3>Agile</h3>
+            <p>Jira</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+        <div class="timeline-item">
+          <h3>PHP Development</h3>
+          <span>7 years</span>
+          <p>Drupal, Laravel and CodeIgniter based web application development.</p>
+  </div>
+  <div class="timeline-item">
+          <h3>DevOps</h3>
+          <span>Last 4 years (overlapping with PHP experience)</span>
+          <p>Linux administration, Apache configuration, Azure DevOps CI/CD pipelines and Azure cloud resource management.</p>
+  </div>
+  <div class="timeline-item">
+    <h3>.NET MVC &amp; SQL Server</h3>
+          <span>3 years</span>
+          <p>Application development using .NET MVC framework and SQL Server database.</p>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="timeline-item">
+    <h3>B.Sc. Computer Science</h3>
+  </div>
+        <div class="timeline-item">
+          <h3>MCS</h3>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <ul class="contact-list">
+          <li>Email: <a href="mailto:ajincd@gmail.com">ajincd@gmail.com</a></li>
+          <li>LinkedIn: <a href="#" id="linkedin-link">Add LinkedIn URL here</a></li>
+  </ul>
+</section>
+
+<footer>
+  <p>&copy; 2026 Ajin C Das. Built with HTML &amp; CSS.</p>
+      </footer>
+
+      </body>
+      </html>
+      
