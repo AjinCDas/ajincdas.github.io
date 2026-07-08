@@ -485,6 +485,14 @@ body {
   border-color: rgba(56, 189, 248, 0.5);
 }
 
+.work-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.work-stack .work-card { flex: 1; }
+
 .work-card.featured {
   grid-column: 1 / -1;
   background:
