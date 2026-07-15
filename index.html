@@ -53,6 +53,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#work">Work</a></li>
+        <li><a href="#ai">AI</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#platform">Platform</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -292,9 +293,71 @@
       </div>
     </section>
 
+    <!-- ============ AI ============ -->
+    <section class="section" id="ai">
+      <h2 class="section-title reveal"><span class="section-index">04</span> AI-augmented engineering</h2>
+      <p class="section-lede reveal">
+        I don't just experiment with AI — I ship production Drupal work with it every day,
+        using <strong>Claude Code</strong> as part of my delivery workflow.
+      </p>
+      <div class="ai-grid">
+        <ul class="ai-list reveal">
+          <li class="ai-item">
+            <span class="ai-icon">🎨</span>
+            <div>
+              <h3>Design-to-code with Figma MCP</h3>
+              <p>Connected Figma to Claude Code using <strong>MCP connectors</strong> — the Figma MCP plugs straight into Claude, generating production-ready HTML from design frames with pixel-accurate markup, no manual slicing.</p>
+            </div>
+          </li>
+          <li class="ai-item">
+            <span class="ai-icon">🧩</span>
+            <div>
+              <h3>AI-built Drupal platform</h3>
+              <p>Delivered a real client project where <strong>Claude handled the CMS configuration</strong> — content types, paragraphs, webforms — and the <strong>HTML integration with SDC components</strong>, with me directing architecture and reviewing every change.</p>
+            </div>
+          </li>
+          <li class="ai-item">
+            <span class="ai-icon">📋</span>
+            <div>
+              <h3>Jira integration with Cowork</h3>
+              <p>Wired <strong>Jira into Claude via Cowork</strong> so tickets are fetched and bug fixes worked by AI — reviewed, verified and shipped reliably within sprint deadlines.</p>
+            </div>
+          </li>
+          <li class="ai-item">
+            <span class="ai-icon">💡</span>
+            <div>
+              <h3>AI-assisted problem solving</h3>
+              <p>Use Claude Code to <strong>brainstorm complex technical tasks</strong> — architecture decisions, tricky migrations and debugging strategies — turning hard problems into clear, actionable solutions. Claude's <strong>Fable and Opus</strong> models are purpose-built for exactly this kind of deep reasoning.</p>
+            </div>
+          </li>
+        </ul>
+        <div class="ai-terminal reveal" aria-hidden="true">
+          <div class="ai-terminal-bar">
+            <span></span><span></span><span></span>
+            <em>claude code — drupal multisite</em>
+          </div>
+          <div class="ai-terminal-body">
+            <p><span class="t-prompt">&gt;</span> get hero frame from Figma and build it as an SDC component</p>
+            <p><span class="t-ok">✓</span> hero.twig · hero.css · hero.component.yml generated</p>
+            <p><span class="t-prompt">&gt;</span> create the paragraph types and attach to basic page</p>
+            <p><span class="t-ok">✓</span> CMS config exported — 6 files · drush cim clean</p>
+            <p><span class="t-prompt">&gt;</span> pick up the next bug from Jira</p>
+            <p><span class="t-dim">→ QDE-142 · nav flicker on scroll</span></p>
+            <p><span class="t-ok">✓</span> fixed, verified &amp; ready for review</p>
+            <p><span class="t-prompt">&gt;</span> brainstorm: caching strategy for the news listing</p>
+            <p><span class="t-dim">→ comparing 3 approaches · weighing trade-offs…</span></p>
+            <p><span class="t-ok">✓</span> recommendation ready — lazy-loaded AJAX + cache tags</p>
+            <p><span class="t-prompt">&gt;</span> deploy to staging</p>
+            <p><span class="t-ok">✓</span> pipeline green · staging updated</p>
+            <p><span class="t-cursor">▋</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ EXPERIENCE ============ -->
     <section class="section" id="experience">
-      <h2 class="section-title reveal"><span class="section-index">04</span> Experience</h2>
+      <h2 class="section-title reveal"><span class="section-index">05</span> Experience</h2>
       <div class="timeline">
         <div class="timeline-item reveal">
           <div class="timeline-dot"></div>
@@ -325,7 +388,7 @@
 
     <!-- ============ CONTACT ============ -->
     <section class="section contact-section" id="contact">
-      <h2 class="section-title reveal"><span class="section-index">05</span> Contact</h2>
+      <h2 class="section-title reveal"><span class="section-index">06</span> Contact</h2>
       <p class="section-lede reveal">Have a Drupal project, a platform to rescue, or a pipeline to build? Let's talk.</p>
       <div class="contact-actions reveal">
         <a class="btn btn-primary" href="mailto:ajincd@gmail.com">✉️ ajincd@gmail.com</a>
