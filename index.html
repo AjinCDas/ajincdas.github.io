@@ -61,20 +61,43 @@
   <main>
     <!-- ============ HERO ============ -->
     <section class="hero">
-      <canvas class="hero-canvas" aria-hidden="true"></canvas>
       <div class="hero-inner">
-        <p class="hero-eyebrow reveal">Full Stack .NET Developer · Azure</p>
-        <h1 class="hero-title reveal">Ajin C Das</h1>
-        <h2 class="hero-subtitle reveal">Building enterprise platforms on <span class="accent">.NET</span> and Azure</h2>
-        <p class="hero-lede reveal">
-          <strong>6+ years of .NET</strong> — from .NET MVC and SQL Server to <strong>.NET 9 with Clean Architecture</strong> —
-          shipped through <strong>Azure DevOps</strong> and <strong>App Services</strong>, with
-          <strong>Databricks, Redis</strong> and <strong>AI chatbot integration</strong>. Government and enterprise systems across Qatar.
-        </p>
-        <div class="hero-cta reveal">
-          <a class="btn btn-primary" href="#work">View my work</a>
-          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        <div class="hero-copy">
+          <p class="hero-eyebrow reveal">Full Stack .NET Developer · Azure</p>
+          <h1 class="hero-title reveal">Ajin C Das</h1>
+          <h2 class="hero-subtitle reveal">Building enterprise platforms on <span class="accent">.NET</span> and Azure</h2>
+          <p class="hero-lede reveal">
+            <strong>6+ years of .NET</strong> — from .NET MVC and SQL Server to <strong>.NET 9 with Clean Architecture</strong> —
+            shipped through <strong>Azure DevOps</strong> and <strong>App Services</strong>, with
+            <strong>Databricks, Redis</strong> and <strong>AI chatbot integration</strong>. Government and enterprise systems across Qatar.
+          </p>
+          <div class="hero-cta reveal">
+            <a class="btn btn-primary" href="#work">View my work</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
         </div>
+
+        <!-- Animated tech orbit -->
+        <div class="orbit-wrap reveal" aria-hidden="true">
+          <div class="orbit">
+            <span class="o-ring o-ring-1"></span>
+            <span class="o-ring o-ring-2"></span>
+            <div class="o-core"><strong>.NET</strong><small>Full Stack</small></div>
+            <div class="o-spin o-spin-1">
+            <div class="o-item" style="--a:0deg;--r:var(--r1)"><span class="o-chip c-data">SQL Server</span></div>
+            <div class="o-item" style="--a:120deg;--r:var(--r1)"><span class="o-chip c-data">Redis</span></div>
+            <div class="o-item" style="--a:240deg;--r:var(--r1)"><span class="o-chip c-ops">Docker</span></div>
+            </div>
+            <div class="o-spin o-spin-2">
+            <div class="o-item" style="--a:0deg;--r:var(--r2)"><span class="o-chip c-azure">Azure</span></div>
+            <div class="o-item" style="--a:72deg;--r:var(--r2)"><span class="o-chip c-azure">Azure DevOps</span></div>
+            <div class="o-item" style="--a:144deg;--r:var(--r2)"><span class="o-chip c-data">Databricks</span></div>
+            <div class="o-item" style="--a:216deg;--r:var(--r2)"><span class="o-chip c-ai">Claude</span></div>
+            <div class="o-item" style="--a:288deg;--r:var(--r2)"><span class="o-chip c-ai">Figma MCP</span></div>
+            </div>
+          </div>
+        </div>
+
         <ul class="hero-stats reveal">
           <li><strong data-count="6">0</strong><span>Years of .NET</span></li>
           <li><strong data-count="2">0</strong><span>Years .NET Core &amp; Azure</span></li>
@@ -83,17 +106,22 @@
       </div>
     </section>
 
-    <!-- ============ EXPERTISE ============ -->
-    <section class="expertise" aria-label="Areas of expertise">
-      <article class="expertise-card expertise-primary reveal">
-        <span class="expertise-period">6+ years · my core stack</span>
-        <h3>.NET &amp; Azure</h3>
-        <p>My career started on <strong>.NET MVC and SQL Server</strong> and today runs on <strong>.NET Core</strong> with <strong>Azure DevOps</strong>, <strong>App Services</strong>, <strong>Databricks</strong> and <strong>AI chatbot integration</strong>.</p>
+    <!-- ============ FOCUS ============ -->
+    <section class="expertise" aria-label="Core focus">
+      <article class="expertise-card reveal">
+        <span class="expertise-period">6+ years</span>
+        <h3>.NET &amp; SQL Server</h3>
+        <p>From <strong>.NET MVC</strong> to <strong>.NET 9</strong> with <strong>Clean Architecture</strong>, <strong>REST APIs</strong>, <strong>SQL Server</strong> and <strong>Redis</strong> caching.</p>
       </article>
-      <article class="expertise-card expertise-secondary reveal">
-        <span class="expertise-period">Additional · 2–3 years</span>
-        <h3>Drupal</h3>
-        <p>Delivered enterprise and government CMS platforms on <strong>Drupal</strong> until May 2024.</p>
+      <article class="expertise-card reveal">
+        <span class="expertise-period">Cloud</span>
+        <h3>Azure</h3>
+        <p><strong>Azure DevOps</strong>, <strong>App Services</strong>, <strong>Databricks</strong>, <strong>AKS</strong>, Virtual Networks and Storage.</p>
+      </article>
+      <article class="expertise-card reveal">
+        <span class="expertise-period">Workflow</span>
+        <h3>AI-assisted delivery</h3>
+        <p><strong>Claude</strong> and <strong>Figma MCP</strong> in daily development, plus <strong>AI chatbot integration</strong>.</p>
       </article>
     </section>
 
