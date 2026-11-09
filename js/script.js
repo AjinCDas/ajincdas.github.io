@@ -88,6 +88,56 @@
   );
   sections.forEach((s) => sectionObserver.observe(s));
 
+  /* ---------- Hero background: drifting network ---------- */
+  const canvas = document.querySelector('.hero-canvas');
+  if (canvas) {
+    const ctx = canvas.getContext('2d');
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let w = 0, h = 0, dots = [], raf;
+
+    const resize = () => {
+      const dpr = window.devicePixelRatio || 1;
+      w = canvas.clientWidth; h = canvas.clientHeight;
+      canvas.width = w * dpr; canvas.height = h * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      const count = Math.max(24, Math.min(70, Math.round(w / 22)));
+      dots = Array.from({ length: count }, () => ({
+        x: Math.random() * w, y: Math.random() * h,
+        vx: (Math.random() - 0.5) * 0.25, vy: (Math.random() - 0.5) * 0.25
+      }));
+    };
+
+    const draw = () => {
+      ctx.clearRect(0, 0, w, h);
+      const max = 130;
+      for (let i = 0; i < dots.length; i++) {
+        const a = dots[i];
+        if (!reduce) {
+          a.x += a.vx; a.y += a.vy;
+          if (a.x < 0 || a.x > w) a.vx *= -1;
+          if (a.y < 0 || a.y > h) a.vy *= -1;
+        }
+        for (let k = i + 1; k < dots.length; k++) {
+          const b = dots[k], d = Math.hypot(a.x - b.x, a.y - b.y);
+          if (d < max) {
+            ctx.strokeStyle = 'rgba(31, 78, 140,' + (0.16 * (1 - d / max)) + ')';
+            ctx.lineWidth = 1;
+            ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+          }
+        }
+        ctx.fillStyle = 'rgba(31, 78, 140, 0.35)';
+        ctx.beginPath(); ctx.arc(a.x, a.y, 2, 0, Math.PI * 2); ctx.fill();
+      }
+      if (!reduce) raf = requestAnimationFrame(draw);
+    };
+
+    resize(); draw();
+    window.addEventListener('resize', () => { cancelAnimationFrame(raf); resize(); draw(); });
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) cancelAnimationFrame(raf); else if (!reduce) draw();
+    });
+  }
+
   /* ---------- Footer year ---------- */
   document.getElementById('year').textContent = new Date().getFullYear();
 })();
