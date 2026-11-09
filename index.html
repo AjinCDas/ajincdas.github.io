@@ -78,23 +78,44 @@
           </div>
         </div>
 
-        <!-- Animated Azure release pipeline -->
-        <div class="pipeline reveal" aria-hidden="true">
-          <div class="pipeline-bar">
+        <!-- Animated architecture flow -->
+        <div class="arch reveal" aria-hidden="true">
+          <div class="arch-bar">
             <span></span><span></span><span></span>
-            <em>azure devops — release pipeline</em>
+            <em>mot qatar — solution architecture</em>
           </div>
-          <div class="pipeline-body">
-            <ul class="pipeline-steps">
-              <li style="--i:0"><span class="p-dot"></span><span class="p-name">Commit <small>main</small></span><span class="p-meta">git push</span></li>
-              <li style="--i:1"><span class="p-dot"></span><span class="p-name">Build <small>.NET 9</small></span><span class="p-meta">clean architecture</span></li>
-              <li style="--i:2"><span class="p-dot"></span><span class="p-name">Test <small>xUnit</small></span><span class="p-meta">all green</span></li>
-              <li style="--i:3"><span class="p-dot"></span><span class="p-name">Deploy <small>App Service</small></span><span class="p-meta">staging → prod</span></li>
-              <li style="--i:4"><span class="p-dot"></span><span class="p-name">Data <small>Databricks · Redis</small></span><span class="p-meta">cache warmed</span></li>
-            </ul>
-            <div class="pipeline-progress"><span></span></div>
-            <p class="pipeline-foot"><span class="p-live"></span> azure · .net 9 · sql server</p>
-          </div>
+          <svg viewBox="0 0 440 330" role="presentation">
+            <path id="p-req" class="a-line" d="M130 63 H220 V140"/>
+            <path id="p-redis" class="a-line" d="M275 155 H297 V63 H320"/>
+            <path id="p-sql" class="a-line" d="M275 170 H320"/>
+            <path id="p-dbx" class="a-line" d="M275 185 H297 V277 H320"/>
+            <path id="p-dep" class="a-line dash" d="M130 277 H220 V200"/>
+
+            <rect class="a-node" x="20" y="40" width="110" height="46" rx="8"/>
+            <text class="a-title" x="75" y="60">React</text><text class="a-sub" x="75" y="75">front end · AR / EN</text>
+
+            <rect class="a-core" x="165" y="140" width="110" height="60" rx="10"/>
+            <text class="a-core-t" x="220" y="166">.NET 9 API</text><text class="a-sub" x="220" y="183" style="fill:#cfe0f5">Clean Architecture</text>
+
+            <rect class="a-node" x="320" y="40" width="100" height="46" rx="8"/>
+            <text class="a-title" x="370" y="60">Redis</text><text class="a-sub" x="370" y="75">cache</text>
+
+            <rect class="a-node" x="320" y="147" width="100" height="46" rx="8"/>
+            <text class="a-title" x="370" y="167">SQL Server</text><text class="a-sub" x="370" y="182">system of record</text>
+
+            <rect class="a-node" x="320" y="254" width="100" height="46" rx="8"/>
+            <text class="a-title" x="370" y="274">Databricks</text><text class="a-sub" x="370" y="289">analytics</text>
+
+            <rect class="a-node" x="20" y="254" width="110" height="46" rx="8"/>
+            <text class="a-title" x="75" y="274">Azure DevOps</text><text class="a-sub" x="75" y="289">CI/CD → App Service</text>
+
+            <circle class="a-pkt" r="4"><animateMotion dur="3.2s" repeatCount="indefinite" begin="0s"><mpath href="#p-req"/></animateMotion></circle>
+            <circle class="a-pkt" r="4"><animateMotion dur="3.2s" repeatCount="indefinite" begin="1.1s"><mpath href="#p-redis"/></animateMotion></circle>
+            <circle class="a-pkt" r="4"><animateMotion dur="3.2s" repeatCount="indefinite" begin="1.6s"><mpath href="#p-sql"/></animateMotion></circle>
+            <circle class="a-pkt" r="4"><animateMotion dur="3.2s" repeatCount="indefinite" begin="2.1s"><mpath href="#p-dbx"/></animateMotion></circle>
+            <circle class="a-pkt deploy" r="4"><animateMotion dur="3.2s" repeatCount="indefinite" begin="0.5s"><mpath href="#p-dep"/></animateMotion></circle>
+          </svg>
+          <p class="arch-foot"><span class="p-live"></span> azure app service · live</p>
         </div>
       </div>
 

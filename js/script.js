@@ -88,6 +88,11 @@
   );
   sections.forEach((s) => sectionObserver.observe(s));
 
+  /* ---------- Stop SVG packet animation for reduced motion ---------- */
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.arch .a-pkt').forEach((c) => c.remove());
+  }
+
   /* ---------- Footer year ---------- */
   document.getElementById('year').textContent = new Date().getFullYear();
 })();
